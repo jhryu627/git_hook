@@ -23,10 +23,11 @@ repos:
 
       - id: run-pytest-before-push
         name: Run Pytest before Push
-        entry: poetry run pytest
+        entry: poetry run pytest apps/tests/
         language: system
         types: [ python ]
         stages: [ pre-push ]
+
 
 
 
